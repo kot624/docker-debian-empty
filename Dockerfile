@@ -10,8 +10,8 @@ RUN sed -i -r 's/^.?PermitRootLogin.*/PermitRootLogin\ yes/g' /etc/ssh/sshd_conf
 RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 RUN useradd -rm -d /home/kot624 -s /bin/bash -g root -G sudo -u 1000 kot624
 RUN usermod -aG sudo kot624
-RUN echo "root:ain433455" | chpasswd
-RUN echo "kot624:ain433455" | chpasswd
+RUN echo "root:433455" | chpasswd
+RUN echo "kot624:433455" | chpasswd
 
 EXPOSE 22
 
