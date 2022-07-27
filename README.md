@@ -60,6 +60,6 @@ This is an empty operating system
 
 >docker build -t $UserName/$AppName:v$Version .
 
->docker run -d --name $UserName -p 24:22 -v $UserName:/var/lib/docker/volumes/$UserName/_data $UserName/$AppName:v$Versi>
+>docker run -d --name $UserName -p 24:22 -v $UserName:/var/lib/docker/volumes/$UserName/_data $UserName/$AppName:v$Version>
 
 Ну как бы на этом все, положил этий файлы вместе и запустил скрипт, в результате у меня собрался образ системы и из него создался контейнер.
